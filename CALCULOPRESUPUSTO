@@ -1,0 +1,23 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+int main()
+
+{
+	float gine,trauma,pedi,pa;
+
+	cout<<"Introduzca el presupuesto anual: ";
+	cin>>pa;
+	gine=pa*(0.4);
+	cout<<"El presupuesto para el area de ginecologia es: "<<gine<<".bs"<<endl;
+	trauma=pa*(0.3);
+	cout<<"El presupuesto para el area de traumatologia es: "<<trauma<<".bs"<<endl;
+	pedi=pa*(0.3);
+	cout<<"El presupuesto para el area de pediatria es: "<<pedi<<".bs"<<endl;
+	getch();
+
+}
