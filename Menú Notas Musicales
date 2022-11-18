@@ -1,0 +1,36 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+   float C,D,E,F,G,A,B,a,b,Do,Re,Mi,Fa,Sol,La,Si; 
+   char opcion;
+   do {
+     cout << endl;
+     cout << "C" << endl;
+     cout << "D" << endl;
+     cout << "E" << endl;
+	 cout << "f" << endl;
+	 cout << "G" << endl;
+	 cout << "A" << endl;
+	 cout << "B" << endl;
+     cout << "Salir" << endl;
+     cout << "Elige una opción: " ;
+	  cin >> opcion;
+     switch (opcion) {
+	    case 'C':cout<<" Do"<<endl; break;
+	    case 'D':cout<<" Re"<<endl; break;
+		case 'E':cout<<" Mi"<<endl; break;
+		case 'F':cout<<" Fa"<<endl; break;
+		case 'G':cout<<" Sol"<<endl; break;
+		case 'A':cout<<" La"<<endl; break;
+		case 'B':cout<<" Si"<<endl; break;
+		case 0: cout << "Salir"<<endl;break;
+	    default: cout << "Opcion invalida" << endl;
+     }
+     	cout << "La nota es. " <<endl;
+   } while (opcion != 0);
+   getch();
