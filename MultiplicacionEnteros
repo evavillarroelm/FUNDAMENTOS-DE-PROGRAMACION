@@ -1,0 +1,21 @@
+include <iostream>
+using namespace std;
+
+int main(){
+	int n;
+	
+	cout<<"Ingrese la cantidad de numeros enteros"<<endl;
+	cin>>n;
+	int mult=1;
+	
+	for(int i=1;i<=n;i++)
+	{
+	
+		cout<<i<<endl;
+		mult=mult*i;
+		
+	}
+	cout<<"Total: "<<mult<<endl;
+	
+	return 0;
+}
