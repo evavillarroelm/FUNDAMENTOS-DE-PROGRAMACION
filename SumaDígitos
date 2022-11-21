@@ -1,0 +1,21 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n,digito,suma;
+	suma=0;
+	cout<<"Ingrese el numero"<<endl;
+    cin>>n;
+    while(n>0)
+    {
+        digito=n%10;
+        n=n/10;
+		suma=suma+digito;
+    }
+	cout<<"Suma: "<<suma<<endl;
+
+    system ("PAUSE");
+    return 0;
+}
