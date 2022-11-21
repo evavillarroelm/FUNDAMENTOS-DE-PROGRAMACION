@@ -1,0 +1,29 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+int main()
+ {
+     int n;
+	 cout<<"Ingrese el numero"<<endl;
+	 cin>>n;
+	 int f=0;
+	 for(int i=2;i<=n;i++)
+	 {
+	    if(n%i==0 && n%n==0)
+	    {
+		 f++;
+	    }
+	 }
+	 if(f>=2)
+	 {
+	     f=0;
+	     cout<<"No es primo"<<endl;
+	 }
+	 else
+	 {
+	     cout<<"Es primo"<<endl;
+	 }
+	system("PAUSE");
+    return 0;
+ }
