@@ -1,0 +1,38 @@
+#include <iostream>
+#include "conio.h"
+using namespace std;
+int sueldodeempleado(int precio,int horas);
+int main()
+{
+	int c,h,precio;
+	cout<<"Ingrese codigo de cargo"<<endl;
+	cin>>c;
+	cout<<"Ingrese horas trabajadas"<<endl;
+	cin>>h;
+	cout<<"El sueldo es: "<<sueldodeempleado(c,h);
+}
+int sueldodeempleado(int precio,int horas)
+{
+	int sueldo,p,h;
+	for(int i=1;i<5;i++)
+	{
+		if(i==1)
+		{
+			p=300;
+		}
+			else if(i==2)
+			{
+				p=250;
+			}
+				else if(i==3)
+				{
+					p=150;
+				}
+					else if(i==4)
+					{
+						p=90;
+					}
+	}
+	sueldo=p*h;
+	return sueldo;
+}
