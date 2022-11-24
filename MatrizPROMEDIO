@@ -1,0 +1,59 @@
+#include <iostream>
+#include "conio.h"
+#include "stdlib.h"
+
+#define MAX 20
+
+using namespace std;
+
+void mostrarmatriz(int matriz[MAX][MAX], int x, int y);
+void cargarmatriz(int matriz[MAX][MAX], int x, int y);
+float promedio (int matriz[MAX][MAX], int x, int y);
+
+int main(){
+	int matriz[MAX][MAX],f,c;
+	float prom;
+	do {
+		cout<<"Ingrese numero de filas: ";
+		cin>> f;
+	}while ((f<=0) || (f>MAX));
+
+	do {
+		cout<<"Ingrese numero de columnas: ";
+		cin>> c;
+	}while ((c<=0) || (c>MAX));
+		cargarmatriz(matriz,f,c);
+		mostrarmatriz(matriz,f,c);
+		prom=promedio(matriz,f,c);
+					cout<<"El valor promedio es: "<<prom;
+		return 0;
+}
+		
+
+
+void cargarmatriz(int matriz[MAX][MAX], int x, int y){
+	for(int i=0;i<x;i++)
+		for(int j=0;j<y;j++){
+			cout<<"matriz["<<i<<"]["<<j<<"]= ";
+	        cin>>matriz[i][j];
+		}			
+}
+
+void mostrarmatriz(int matriz[MAX][MAX], int x, int y){
+	for(int i=0;i<x;i++)
+	{
+		for(int j=0;j<y;j++){
+	        cout<<matriz[i][j]<<"\t";
+		}
+		cout<<endl;
+	}
+}
+
+float promedio (int matriz[MAX][MAX], int x, int y){
+	float prom,S=0;
+	for(int i=0;i<x;i++)
+		for(int j=0;j<y;j++)
+			S=S+matriz[i][j];
+	prom=S/(x*y);
+	return prom;
+}
